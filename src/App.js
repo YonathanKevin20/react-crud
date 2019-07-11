@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import logo from './logo.svg'
 import UserTable from './tables/UserTable'
 import AddUserForm from './forms/AddUserForm'
 import EditUserForm from './forms/EditUserForm'
+import './App.css'
 
 const App = () => {
   const usersData = [
@@ -48,6 +50,11 @@ const App = () => {
 
   return (
     <div className="container">
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+        </header>
+      </div>
       <h1>CRUD App with Hooks</h1>
       <div className="flex-row">
         <div className="flex-large">
